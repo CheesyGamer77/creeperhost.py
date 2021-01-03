@@ -6,6 +6,7 @@ python:
 os: linux
 dist: xenial
 install:
-  - sudo python3 -m pip install aiohttp
+  - sudo apt install python3-pip
+  - sudo pip3 install aiohttp
 script:
   - ./run_tests
