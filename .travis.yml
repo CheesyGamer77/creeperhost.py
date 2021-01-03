@@ -4,8 +4,9 @@ python:
   - 3.6
   - 3.7
   - 3.8
-sudo: required
+os: linux
+dist: xenial
 install:
-  - sudo pip install aiohttp
+  - sudo pip3 install aiohttp
 script:
   - ./run_tests
