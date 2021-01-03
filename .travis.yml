@@ -8,6 +8,7 @@ dist: xenial
 install:
   - sudo apt-get update
   - sudo apt install python3-pip
-  - sudo pip3 install aiohttp
+  - sudo -H pip3 install setuptools
+  - sudo -H pip3 install aiohttp
 script:
   - ./run_tests
